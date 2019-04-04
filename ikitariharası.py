@@ -1,0 +1,15 @@
+from datetime import datetime, date
+print("tarih 1 giriniz")
+gun1=int(input("1.tarih  gün degeri: "))
+ay1=int(input("1.tarih  ay degeri: "))
+yıl1=int(input("1.tarih  yıl degeri: "))
+print("tarih  giriniz")
+gun2=int(input("2.tarih  dun degeri: "))
+ay2=int(input("2.tarih   ay degeri: "))
+yıl2=int(input("2.tarih  gun degeri: "))
+t1 = date(year = yıl1, month = ay1, day = gun1)
+t2 = date(year = yıl2, month = ay2, day = gun2)
+t3 = t2-t1
+print("1. tarih : ",t1)
+print("2. tarih : ",t2)
+print("iki tarih arası gün sayısı : ",t3)
